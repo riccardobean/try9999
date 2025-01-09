@@ -30,81 +30,82 @@
         <div class="MainBody">
             <div class="form-container">
 
-                <form class="form1" id="form1" action="" method="POST">
-                    <div class="initialInput">
-                        <div class="emailClass">
-                            <label for="email"><b>Email</b><span style="color:red"> *</span></label>
-                            <input type="email" name="email" id="email" placeholder=" john.doe@info.org" required>
-                            <span class="color-indicator"></span>
+                <form class="form" id="form" action="https://formsubmit.co/xedaw51261@xcmexico.com" method="POST">
+
+                    <div class="form1" id="form1">
+                        <div class="initialInput">
+                            <div class="emailClass">
+                                <label for="email"><b>Email</b><span style="color:red"> *</span></label>
+                                <input type="email" name="email" id="email" placeholder=" john.doe@info.org" required>
+                                <span class="color-indicator"></span>
+                            </div>
+                            <div class="firstNameClass">
+                                <label for="firstName"><b>First Name</b><span style="color:red"> *</span></label>
+                                <input type="text" name="firstName" id="firstName" placeholder=" John" required>
+                                <span class="color-indicator"></span>
+                            </div>
+                            <div class="lastNameClass">
+                                <label for="lastName"><b>Last Name</b><span style="color:red"> *</span></label>
+                                <input type="text" name="lastName" id="lastName" placeholder=" Doe" required>
+                                <span class="color-indicator"></span>
+                            </div>
+                            <div class="companyClass">
+                                <label for="company"><b>Company</b></label>
+                                <input type="text" name="company" id="company" placeholder=" Your company (Optional)">
+                                <span class="color-indicator"></span>
+                            </div>
                         </div>
-                        <div class="firstNameClass">
-                            <label for="firstName"><b>First Name</b><span style="color:red"> *</span></label>
-                            <input type="text" name="firstName" id="firstName" placeholder=" John" required>
-                            <span class="color-indicator"></span>
+                        <div class="reasonClass">
+                            <label for="reason"><b>Reason of Contact:</b><span style="color:red"> *</span></label>
+                            <div class="reasonConnectClass">
+                                <input type="radio" name="reason" id="reasonConnect" value="Connect" required>
+                                <label for="reasonConnect">Connect</label>
+                            </div>
+                            <div class="reasonJobOfferClass">
+                                <input type="radio" name="reason" id="reasonJobOffer" value="Job Offer" required>
+                                <label for="reasonJobOffer">Job Offer</label>
+                            </div>
+                            <div class="reasonResumeAccessClass">
+                                <input type="radio" name="reason" id="reasonResumeAccess" value="Resume Access"
+                                    required>
+                                <label for="reasonResumeAccess">Resume Access</label>
+                            </div>
+                            <div class="reasonOtherClass">
+                                <input type="radio" name="reason" id="reasonOther" value="Other" required>
+                                <label for="reasonOther">Other:</label>
+                                <input type="text" name="reason-other" id="reason-other" placeholder="Reason of contact"
+                                    required>
+                            </div>
+
                         </div>
-                        <div class="lastNameClass">
-                            <label for="lastName"><b>Last Name</b><span style="color:red"> *</span></label>
-                            <input type="text" name="lastName" id="lastName" placeholder=" Doe" required>
-                            <span class="color-indicator"></span>
+                        <div class="checkboxClass">
+                            <div class="checkboxLabel">
+                                <input type="checkbox" name="checkBox" id="checkBox" required>
+                                <label for="checkBox" id="checkboxLabel">I understand that I am submitting my personal
+                                    information at my own risk. The owner of the website shall not be held responsible
+                                    for
+                                    any
+                                    possible data leak.<span style="color:red"> *</span></label>
+                            </div>
                         </div>
-                        <div class="companyClass">
-                            <label for="company"><b>Company</b></label>
-                            <input type="text" name="company" id="company" placeholder=" Your company (Optional)">
-                            <span class="color-indicator"></span>
-                        </div>
+                        <button type="submit" class="validate" name="validate" id="validate">Next >>></button>
+                        <div class="error-message" id="form1-error-message"
+                            style="background-color: yellow; color: red; margin-top: 10px; display: none;"></div>
                     </div>
-                    <div class="reasonClass">
-                        <label for="reason"><b>Reason of Contact:</b><span style="color:red"> *</span></label>
-                        <div class="reasonConnectClass">
-                            <input type="radio" name="reason" id="reasonConnect" value="Connect" required>
-                            <label for="reasonConnect">Connect</label>
-                        </div>
-                        <div class="reasonJobOfferClass">
-                            <input type="radio" name="reason" id="reasonJobOffer" value="Job Offer" required>
-                            <label for="reasonJobOffer">Job Offer</label>
-                        </div>
-                        <div class="reasonResumeAccessClass">
-                            <input type="radio" name="reason" id="reasonResumeAccess" value="Resume Access" required>
-                            <label for="reasonResumeAccess">Resume Access</label>
-                        </div>
-                        <div class="reasonOtherClass">
-                            <input type="radio" name="reason" id="reasonOther" value="Other" required>
-                            <label for="reasonOther">Other:</label>
-                            <input type="text" name="reason-other" id="reason-other" placeholder="Reason of contact"
+
+                    <div class="form2" id="form2" style="display: none;">
+                        <div class="messageClass">
+                            <label for="message"><b>Message</b><span style="color:red"> *</span></label>
+                            <input type="text" name="message" id="message" placeholder="Write your message here"
                                 required>
                         </div>
-
-                    </div>
-                    <div class="checkboxClass">
-                        <div class="checkboxLabel">
-                            <input type="checkbox" name="checkBox" id="checkBox" required>
-                            <label for="checkBox" id="checkboxLabel">I understand that I am submitting my personal
-                                information at my own risk. The owner of the website shall not be held responsible for
-                                any
-                                possible data leak.<span style="color:red"> *</span></label>
+                        <div class="buttons">
+                            <button type="button" name="back" id="back">
+                                <<< Back</button>
+                                    <button type="submit" name="submit" id="submit">SEND</button>
                         </div>
                     </div>
-                    <button type="submit" class="validate" name="validate" id="validate">Next >>></button>
-                    <div class="error-message" id="form1-error-message"
-                        style="background-color: yellow; color: red; margin-top: 10px; display: none;"></div>
 
-                </form>
-                <form class="form2" id="form2" action="https://formsubmit.co/1985dc10140adcb971859c01b5c69cce" method="POST" style="display:none">
-                    <input type="hidden" name="firstName" id="hiddenFirstName">
-                    <input type="hidden" name="lastName" id="hiddenLastName">
-                    <input type="hidden" name="email" id="hiddenEmail">
-                    <input type="hidden" name="company" id="hiddenCompany">
-                    <input type="hidden" name="reason" id="reasonHidden">
-                    <input type="hidden" name="reasonOther" id="reasonOtherHidden">
-                    <div class="messageClass">
-                        <label for="message"><b>Message</b><span style="color:red"> *</span></label>
-                        <input type="text" name="message" id="message" placeholder="Write your message here" required>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" name="back" id="back">
-                            <<< Back</button>
-                                <button type="submit" name="submit" id="submit">SEND</button>
-                    </div>
                 </form>
 
             </div>
